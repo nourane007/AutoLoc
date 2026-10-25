@@ -1,5 +1,6 @@
 package tn.esprit.autoloc.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.autoloc.domain.Contrat;
@@ -8,6 +9,7 @@ import tn.esprit.autoloc.service.IContratService;
 import java.util.List;
 
 @RestController
+@Tag(name = "Gestion de Contrat")
 @AllArgsConstructor
 @RequestMapping("/contrats")
 public class ContratController {
